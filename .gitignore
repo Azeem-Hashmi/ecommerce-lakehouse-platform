@@ -1,5 +1,25 @@
-.venv/
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+
+# Environment variables / secrets
 .env
+.env.*
+
+# Databricks
 .databricks/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+.databricks

@@ -1,0 +1,14 @@
+environment:
+  name: dev
+
+databricks:
+  catalog: ecommerce_lakehouse
+
+schemas:
+  source: source
+  bronze: bronze
+  silver: silver
+  gold: gold
+
+logging:
+  level: DEBUG

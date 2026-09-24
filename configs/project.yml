@@ -1,0 +1,12 @@
+project:
+  name: ecommerce-lakehouse-platform
+  version: "1.0"
+
+databricks:
+  catalog: ecommerce_lakehouse
+
+schemas:
+  source: source
+  bronze: bronze
+  silver: silver
+  gold: gold
