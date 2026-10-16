@@ -10,5 +10,9 @@ schemas:
   silver: silver
   gold: gold
 
+storage:
+  bucket: ecommerce-lakehouse-platform
+  source_prefix: sftp-data
+
 logging:
   level: DEBUG

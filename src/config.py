@@ -20,11 +20,14 @@ def load_config(environment: str | None = None) -> dict:
 
     project_config = load_yaml(CONFIG_DIR / "project.yml")
     environment_config = load_yaml(CONFIG_DIR / f"{environment}.yml")
+    ingestion_config = load_yaml(CONFIG_DIR / "ingestion.yml")
 
     return {
         "project": project_config.get("project", {}),
         "databricks": environment_config.get("databricks", {}),
         "schemas": environment_config.get("schemas", {}),
+        "storage": environment_config.get("storage", {}),
         "environment": environment_config.get("environment", {}),
         "logging": environment_config.get("logging", {}),
+        "ingestion": ingestion_config.get("datasets", {}),
     }

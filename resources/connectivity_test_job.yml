@@ -7,7 +7,7 @@ resources:
         - task_key: test
 
           spark_python_task:
-            python_file: ../src/test.py
+            python_file: ../tests/connectivity/test_databricks_connect.py
 
           environment_key: default
 

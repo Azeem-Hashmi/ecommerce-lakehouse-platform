@@ -1,0 +1,64 @@
+datasets:
+
+  orders:
+    source_folder: orders
+    source_file: orders.csv
+    target_table: orders
+    source_system: sftp
+    ingestion_type: incremental
+
+  order_items:
+    source_folder: order_items
+    source_file: order_items.csv
+    target_table: order_items
+    source_system: sftp
+    ingestion_type: incremental
+
+  payments:
+    source_folder: payments
+    source_file: payments.csv
+    target_table: payments
+    source_system: sftp
+    ingestion_type: incremental
+
+  order_reviews:
+    source_folder: order_reviews
+    source_file: order_reviews.csv
+    target_table: order_reviews
+    source_system: sftp
+    ingestion_type: incremental
+
+  customers:
+    source_folder: customers
+    source_file: customers.csv
+    target_table: customers
+    source_system: sftp
+    ingestion_type: full
+
+  sellers:
+    source_folder: sellers
+    source_file: sellers.csv
+    target_table: sellers
+    source_system: sftp
+    ingestion_type: full
+
+  products:
+    source_folder: products
+    source_file: products.csv
+    target_table: products
+    source_system: sftp
+    ingestion_type: full
+
+  product_category_name_translation:
+    source_folder: product_category_name_translation
+    source_file: product_category_name_translation.csv
+    target_table: product_category_name_translation
+    source_system: sftp
+    ingestion_type: full
+
+  behavior:
+    source_folder: behavior
+    source_file: behavior.csv
+    target_table: behavior
+    source_system: kafka
+    ingestion_type: streaming
